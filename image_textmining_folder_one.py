@@ -11,7 +11,7 @@ custom_config = r'--oem 3 --psm 6 tessedit_char_whitelist=0123456789abcdefghijkl
 pytesseract.pytesseract.tesseract_cmd = r'C:/Tesseract-OCR/tesseract.exe'
 
 # a 폴더 경로 지정
-folder_path = '/Users/jjong/desktop/test'
+folder_path = '/Users/desktop/test'
 
 # 폴더 내의 모든 이미지 파일 경로 가져오기
 image_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith('.png') or f.endswith('.jpg')]
@@ -27,4 +27,4 @@ for image_file in image_files:
 # 추출한 텍스트를 docx 파일로 저장
 doc = docx.Document()
 doc.add_paragraph(text)
-doc.save('/Users/jjong/desktop/testresult.docx')
+doc.save('/Users/desktop/testresult.docx')
