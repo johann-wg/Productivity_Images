@@ -1,13 +1,13 @@
 from PIL import Image
 
 # 이미지 파일 경로 설정
-img_path = "/Users/jjong/desktop/개인정보동의.jpg"
+img_path = "/Users/desktop/개인정보동의.jpg"
 
 # 이미지 열기
 img = Image.open(img_path)
 
 # PDF 파일 경로 설정
-pdf_path = "/Users/jjong/desktop/개인정보동의.pdf"
+pdf_path = "/Users/desktop/개인정보동의.pdf"
 
 # 이미지를 PDF 파일로 저장
 img.save(pdf_path, "PDF", resolution=100.0)
@@ -17,10 +17,10 @@ img.save(pdf_path, "PDF", resolution=100.0)
 # from pdf2image import convert_from_path
 
 # # PDF 파일 경로 설정
-# pdf_path = "/Users/jjong/desktop/test/테스트-테스트.pdf"
+# pdf_path = "/Users/desktop/test/테스트-테스트.pdf"
 
 # # 이미지 파일 경로 설정
-# image_dir = "/Users/jjong/desktop/"
+# image_dir = "/Users/desktop/"
 
 # # 이미지 파일 이름 설정
 # image_name = "test"
