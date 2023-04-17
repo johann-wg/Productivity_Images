@@ -6,9 +6,9 @@ import docx
 pytesseract.pytesseract.tesseract_cmd = r'C:/Tesseract-OCR/tesseract.exe'
 
 # 이미지 파일에서 텍스트 추출
-result = pytesseract.image_to_string('/Users/jjong/desktop/get2.jpg', lang='eng', output_type=Output.DICT)
+result = pytesseract.image_to_string('/Users/desktop/get2.jpg', lang='eng', output_type=Output.DICT)
 
 # 추출한 텍스트 출력
 doc = docx.Document()
 doc.add_paragraph(result['text'])
-doc.save('/Users/jjong/desktop/result.docx')
+doc.save('/Users/desktop/result.docx')
